@@ -83,23 +83,6 @@ public class User implements UserDetails {
       return true;
    }
 
-//   public String getAllRolesString() {
-//      StringBuilder allRolesString = new StringBuilder(new String());
-//      String roleUser = "";
-//      for (Role role: getRoles()) {
-//         roleUser = allRolesString
-//                 .append(role.toString())
-//                 .append(" ")
-//                 .toString()
-//                 .split(" ")[1]
-//                 .replace("name=","")
-//                 .replace(",","")
-//                 .replace("ROLE_", "");
-//      }
-//
-//      return roleUser;
-//   }
-
    public String getAllRolesString() {
       List<String> roleNames = new ArrayList<>();
       for (Role role : getRoles()) {
